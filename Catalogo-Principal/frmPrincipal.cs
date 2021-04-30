@@ -42,7 +42,7 @@ namespace Catalogo_Principal
                 dvgArticulos.DataSource = listaArticulo;
 
                 //Ocultar
-                dvgArticulos.Columns["Codigo"].Visible = false;
+                //dvgArticulos.Columns["Codigo"].Visible = false;
                 dvgArticulos.Columns["Descripcion"].Visible = false;
                 dvgArticulos.Columns["Categoria"].Visible = false;
                 dvgArticulos.Columns["Imagen"].Visible = false;
