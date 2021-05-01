@@ -101,6 +101,7 @@ namespace Catalogo_Principal
             this.btnDetalle.TabIndex = 3;
             this.btnDetalle.Text = "Detalles";
             this.btnDetalle.UseVisualStyleBackColor = false;
+            this.btnDetalle.Click += new System.EventHandler(this.btnDetalle_Click);
             // 
             // txtFiltro
             // 

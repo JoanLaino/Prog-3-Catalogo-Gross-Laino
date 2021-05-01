@@ -43,3 +43,12 @@ C:\Users\joanl\OneDrive\Documentos\GitHub\Prog-3-Catalogo-Gross-Laino\Negocio\ob
 C:\Users\joanl\OneDrive\Documentos\GitHub\Prog-3-Catalogo-Gross-Laino\Negocio\obj\Debug\Negocio.csproj.CopyComplete
 C:\Users\joanl\OneDrive\Documentos\GitHub\Prog-3-Catalogo-Gross-Laino\Negocio\obj\Debug\Negocio.dll
 C:\Users\joanl\OneDrive\Documentos\GitHub\Prog-3-Catalogo-Gross-Laino\Negocio\obj\Debug\Negocio.pdb
+C:\Users\joanl\OneDrive\Desktop\Catalogo\Negocio\bin\Debug\Negocio.dll
+C:\Users\joanl\OneDrive\Desktop\Catalogo\Negocio\bin\Debug\Negocio.pdb
+C:\Users\joanl\OneDrive\Desktop\Catalogo\Negocio\bin\Debug\Dominio.dll
+C:\Users\joanl\OneDrive\Desktop\Catalogo\Negocio\bin\Debug\Dominio.pdb
+C:\Users\joanl\OneDrive\Desktop\Catalogo\Negocio\obj\Debug\Negocio.csprojAssemblyReference.cache
+C:\Users\joanl\OneDrive\Desktop\Catalogo\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\joanl\OneDrive\Desktop\Catalogo\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+C:\Users\joanl\OneDrive\Desktop\Catalogo\Negocio\obj\Debug\Negocio.dll
+C:\Users\joanl\OneDrive\Desktop\Catalogo\Negocio\obj\Debug\Negocio.pdb

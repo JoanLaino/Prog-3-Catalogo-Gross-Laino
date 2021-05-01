@@ -27,3 +27,9 @@ C:\Users\joanl\OneDrive\Documentos\GitHub\Prog-3-Catalogo-Gross-Laino\Dominio\ob
 C:\Users\joanl\OneDrive\Documentos\GitHub\Prog-3-Catalogo-Gross-Laino\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
 C:\Users\joanl\OneDrive\Documentos\GitHub\Prog-3-Catalogo-Gross-Laino\Dominio\obj\Debug\Dominio.dll
 C:\Users\joanl\OneDrive\Documentos\GitHub\Prog-3-Catalogo-Gross-Laino\Dominio\obj\Debug\Dominio.pdb
+C:\Users\joanl\OneDrive\Desktop\Catalogo\Dominio\bin\Debug\Dominio.dll
+C:\Users\joanl\OneDrive\Desktop\Catalogo\Dominio\bin\Debug\Dominio.pdb
+C:\Users\joanl\OneDrive\Desktop\Catalogo\Dominio\obj\Debug\Dominio.csprojAssemblyReference.cache
+C:\Users\joanl\OneDrive\Desktop\Catalogo\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\joanl\OneDrive\Desktop\Catalogo\Dominio\obj\Debug\Dominio.dll
+C:\Users\joanl\OneDrive\Desktop\Catalogo\Dominio\obj\Debug\Dominio.pdb

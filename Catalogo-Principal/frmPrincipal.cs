@@ -43,7 +43,7 @@ namespace Catalogo_Principal
                 dvgArticulos.DataSource = listaArticulo;
 
                 //Ocultar
-                dvgArticulos.Columns["Codigo"].Visible = false;
+                //dvgArticulos.Columns["Codigo"].Visible = false;
                 dvgArticulos.Columns["Descripcion"].Visible = false;
                 dvgArticulos.Columns["Categoria"].Visible = false;
                 dvgArticulos.Columns["Imagen"].Visible = false;
@@ -73,5 +73,26 @@ namespace Catalogo_Principal
             Articulo seleccionado = (Articulo)dvgArticulos.CurrentRow.DataBoundItem;
             RecargarImg(seleccionado.Imagen);
         }
+
+        private void btnDetalle_Click(object sender, EventArgs e)
+        {
+            Articulo seleccionado = (Articulo)dvgArticulos.CurrentRow.DataBoundItem;
+            //ArticuloDB articuloDB = new ArticuloDB();
+            frmDetalles detalle = new frmDetalles();
+
+            try
+            {
+                detalle.cargarDetalle(seleccionado.Codigo);
+                
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            
+            detalle.ShowDialog();
+        }
+        
     }
 }

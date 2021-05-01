@@ -47,5 +47,43 @@ namespace Negocio
                 datos.CerrarConexion();
             }
         }
+
+        public List<Articulo> ListarDetalles(string Codigo)
+        {
+            List<Articulo> fila = new List<Articulo>();
+            AccesoDatos datos = new AccesoDatos();
+
+            try
+            {
+                datos.SetearConsulta("select Codigo, Nombre, A.Descripcion, M.Descripcion Marca, C.Descripcion Categoria, ImagenUrl, Precio from ARTICULOS A, MARCAS M, CATEGORIAS C WHERE A.IdMarca = M.Id AND C.Id = A.IdCategoria and Codigo = '" + Codigo + "'");
+                datos.EjecutarLectura();
+
+                while (datos.Lector.Read())
+                {
+                    Articulo aux = new Articulo();
+                    aux.Codigo = (string)datos.Lector["Codigo"];
+                    aux.Nombre = (string)datos.Lector["Nombre"];
+                    aux.Descripcion = datos.Lector.GetString(2);
+                    aux.Marca = (string)datos.Lector["Marca"];
+                    aux.Categoria = (string)datos.Lector["Categoria"];
+                    aux.Imagen = (string)datos.Lector["ImagenUrl"];
+                    aux.Precio = Math.Truncate((decimal)datos.Lector["Precio"] * 100) / 100;
+
+
+                    fila.Add(aux);
+                }
+
+                return fila;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally
+            {
+                datos.CerrarConexion();
+            }
+        }
     }
 }
