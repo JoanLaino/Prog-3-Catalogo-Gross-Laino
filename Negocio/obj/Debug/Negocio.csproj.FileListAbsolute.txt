@@ -34,3 +34,12 @@ C:\Users\Juan Manuel Gross\Documents\GitHub\Prog-3-Catalogo-Gross-Laino\Negocio\
 C:\Users\Juan Manuel Gross\Documents\GitHub\Prog-3-Catalogo-Gross-Laino\Negocio\obj\Debug\Negocio.csproj.CopyComplete
 C:\Users\Juan Manuel Gross\Documents\GitHub\Prog-3-Catalogo-Gross-Laino\Negocio\obj\Debug\Negocio.dll
 C:\Users\Juan Manuel Gross\Documents\GitHub\Prog-3-Catalogo-Gross-Laino\Negocio\obj\Debug\Negocio.pdb
+C:\Users\joanl\OneDrive\Documentos\GitHub\Prog-3-Catalogo-Gross-Laino\Negocio\bin\Debug\Negocio.dll
+C:\Users\joanl\OneDrive\Documentos\GitHub\Prog-3-Catalogo-Gross-Laino\Negocio\bin\Debug\Negocio.pdb
+C:\Users\joanl\OneDrive\Documentos\GitHub\Prog-3-Catalogo-Gross-Laino\Negocio\bin\Debug\Dominio.dll
+C:\Users\joanl\OneDrive\Documentos\GitHub\Prog-3-Catalogo-Gross-Laino\Negocio\bin\Debug\Dominio.pdb
+C:\Users\joanl\OneDrive\Documentos\GitHub\Prog-3-Catalogo-Gross-Laino\Negocio\obj\Debug\Negocio.csprojAssemblyReference.cache
+C:\Users\joanl\OneDrive\Documentos\GitHub\Prog-3-Catalogo-Gross-Laino\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\joanl\OneDrive\Documentos\GitHub\Prog-3-Catalogo-Gross-Laino\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+C:\Users\joanl\OneDrive\Documentos\GitHub\Prog-3-Catalogo-Gross-Laino\Negocio\obj\Debug\Negocio.dll
+C:\Users\joanl\OneDrive\Documentos\GitHub\Prog-3-Catalogo-Gross-Laino\Negocio\obj\Debug\Negocio.pdb

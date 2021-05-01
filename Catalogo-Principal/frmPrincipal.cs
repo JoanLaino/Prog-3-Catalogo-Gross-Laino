@@ -24,6 +24,7 @@ namespace Catalogo_Principal
         {
             frmAgregar agregar = new frmAgregar();
             agregar.ShowDialog();
+            cargarListado();
         }
 
         private void frmPrincipal_Load(object sender, EventArgs e)
@@ -42,7 +43,7 @@ namespace Catalogo_Principal
                 dvgArticulos.DataSource = listaArticulo;
 
                 //Ocultar
-                //dvgArticulos.Columns["Codigo"].Visible = false;
+                dvgArticulos.Columns["Codigo"].Visible = false;
                 dvgArticulos.Columns["Descripcion"].Visible = false;
                 dvgArticulos.Columns["Categoria"].Visible = false;
                 dvgArticulos.Columns["Imagen"].Visible = false;
@@ -62,15 +63,15 @@ namespace Catalogo_Principal
             pbxArticulo.Load(img);
         }
 
-        private void dgvArticulos_MouseClick(object sender, MouseEventArgs e)
-        {
-            Articulo seleccionado = (Articulo)dvgArticulos.CurrentRow.DataBoundItem;
-            RecargarImg(seleccionado.Imagen);
-        }
-
         private void label2_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("https://github.com/JoanLaino/Prog-TP2-Gross-Laino.git");
+        }
+
+        private void dvgArticulos_Click(object sender, EventArgs e)
+        {
+            Articulo seleccionado = (Articulo)dvgArticulos.CurrentRow.DataBoundItem;
+            RecargarImg(seleccionado.Imagen);
         }
     }
 }
