@@ -95,3 +95,4 @@ C:\Users\joanl\OneDrive\Desktop\Catalogo\Catalogo-Principal\obj\Debug\Presentaci
 C:\Users\joanl\OneDrive\Desktop\Catalogo\Catalogo-Principal\obj\Debug\Catalogo-Principal.exe
 C:\Users\joanl\OneDrive\Desktop\Catalogo\Catalogo-Principal\obj\Debug\Catalogo-Principal.pdb
 C:\Users\joanl\OneDrive\Desktop\Catalogo\Catalogo-Principal\obj\Debug\Catalogo_Principal.frmDetalles.resources
+C:\Users\Juan Manuel Gross\Documents\GitHub\Prog-3-Catalogo-Gross-Laino\Catalogo-Principal\obj\Debug\Catalogo_Principal.frmDetalles.resources
