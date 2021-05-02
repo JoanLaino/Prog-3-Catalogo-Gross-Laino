@@ -52,8 +52,8 @@ namespace Catalogo_Principal
                     txtCodigoArticulo.Text = articulo.Codigo;
                     txtNombreArticulo.Text = articulo.Nombre;
                     txtDescripcionArticulo.Text = articulo.Descripcion;
-                    cboCategoriaArticulo.SelectedValue = articulo.categoria.Id;
-                    cboMarcaArticulo.SelectedValue = articulo.marca.Id;
+                    cboCategoriaArticulo.SelectedValue = articulo.Categoria.Id;
+                    cboMarcaArticulo.SelectedValue = articulo.Marca.Id;
                     txtImagenArticulo.Text = articulo.Imagen;
                     RecargarImg(txtImagenArticulo.Text);
                     numPrecio.Value = articulo.Precio;
@@ -89,8 +89,8 @@ namespace Catalogo_Principal
                 articulo.Codigo = txtCodigoArticulo.Text;
                 articulo.Nombre = txtNombreArticulo.Text;
                 articulo.Descripcion = txtDescripcionArticulo.Text;
-                articulo.marca = (Marca)cboMarcaArticulo.SelectedItem;
-                articulo.categoria = (Categoria)cboCategoriaArticulo.SelectedItem;
+                articulo.Marca = (Marca)cboMarcaArticulo.SelectedItem;
+                articulo.Categoria = (Categoria)cboCategoriaArticulo.SelectedItem;
                 articulo.Imagen = txtImagenArticulo.Text;
                 articulo.Precio = (decimal)numPrecio.Value;
 

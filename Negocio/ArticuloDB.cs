@@ -18,7 +18,7 @@ namespace Negocio
             
             try
             {
-                datos.SetearConsulta("select Codigo, Nombre, A.Descripcion, M.Descripcion Marca, C.Descripcion Categoria, ImagenUrl, Precio from ARTICULOS A, MARCAS M, CATEGORIAS C WHERE A.IdMarca = M.Id AND C.Id = A.IdCategoria");
+                datos.SetearConsulta("select Codigo, Nombre, A.Descripcion, M.Id IdMarca, M.Descripcion Marca, C.Id IdCategoria, C.Descripcion Categoria, ImagenUrl, Precio from ARTICULOS A, MARCAS M, CATEGORIAS C WHERE A.IdMarca = M.Id AND C.Id = A.IdCategoria");
                 datos.EjecutarLectura();
 
                 while(datos.Lector.Read())
@@ -27,21 +27,22 @@ namespace Negocio
                     aux.Codigo = (string)datos.Lector["Codigo"];
                     aux.Nombre = (string)datos.Lector["Nombre"];
                     aux.Descripcion = datos.Lector.GetString(2);
-                    aux.Marca = (string)datos.Lector["Marca"];
-                    aux.Categoria = (string)datos.Lector["Categoria"];
+                    aux.Marca = new Marca((string)datos.Lector["Marca"]);
+                    aux.Marca.Id = (int)datos.Lector["IdMarca"];
+                    aux.Categoria = new Categoria((string)datos.Lector["Categoria"]);
+                    aux.Categoria.Id = (int)datos.Lector["IdCategoria"];
                     aux.Imagen = (string)datos.Lector["ImagenUrl"];
                     aux.Precio = Math.Truncate((decimal)datos.Lector["Precio"] * 100) /100;
                     
-
                     lista.Add(aux);
                 }
 
                 return lista;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
-                throw;
+                throw ex;
             }
             finally
             {
@@ -56,7 +57,7 @@ namespace Negocio
 
             try
             {
-                datos.SetearConsulta("select Codigo, Nombre, A.Descripcion, M.Descripcion Marca, C.Descripcion Categoria, ImagenUrl, Precio from ARTICULOS A, MARCAS M, CATEGORIAS C WHERE A.IdMarca = M.Id AND C.Id = A.IdCategoria and Codigo = '" + Codigo + "'");
+                datos.SetearConsulta("select Codigo, Nombre, A.Descripcion, M.Id IdMarca, M.Descripcion Marca, C.Id IdCategoria, C.Descripcion Categoria, ImagenUrl, Precio from ARTICULOS A, MARCAS M, CATEGORIAS C WHERE A.IdMarca = M.Id AND C.Id = A.IdCategoria and Codigo = '" + Codigo + "'");
                 datos.EjecutarLectura();
 
                 while (datos.Lector.Read())
@@ -65,11 +66,12 @@ namespace Negocio
                     aux.Codigo = (string)datos.Lector["Codigo"];
                     aux.Nombre = (string)datos.Lector["Nombre"];
                     aux.Descripcion = datos.Lector.GetString(2);
-                    aux.Marca = (string)datos.Lector["Marca"];
-                    aux.Categoria = (string)datos.Lector["Categoria"];
+                    aux.Marca = new Marca((string)datos.Lector["Marca"]);
+                    aux.Marca.Id = (int)datos.Lector["IdMarca"];
+                    aux.Categoria = new Categoria((string)datos.Lector["Categoria"]);
+                    aux.Categoria.Id = (int)datos.Lector["IdCategoria"];
                     aux.Imagen = (string)datos.Lector["ImagenUrl"];
                     aux.Precio = Math.Truncate((decimal)datos.Lector["Precio"] * 100) / 100;
-
 
                     fila.Add(aux);
                 }
@@ -93,7 +95,7 @@ namespace Negocio
 
             try
             {
-                string valores = "values('" + articulo.Codigo + "', '" + articulo.Nombre + "', '" + articulo.Descripcion + "', " + articulo.marca.Id + ", " + articulo.categoria.Id + ", '" + articulo.Imagen + "', " + articulo.Precio + ")";
+                string valores = "values('" + articulo.Codigo + "', '" + articulo.Nombre + "', '" + articulo.Descripcion + "', " + articulo.Marca.Id + ", " + articulo.Categoria.Id + ", '" + articulo.Imagen + "', " + articulo.Precio + ")";
                 datos.SetearConsulta("insert into ARTICULOS (Codigo, Nombre, Descripcion, IdMarca, IdCategoria, ImagenUrl, Precio) " + valores);
 
                 datos.EjectutarAccion();
