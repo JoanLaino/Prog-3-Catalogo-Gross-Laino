@@ -88,7 +88,6 @@ namespace Catalogo_Principal
             //} Probamos pero no solucionó el problema de no seleccionar nada.
             Articulo seleccionado = (Articulo)dvgArticulos.CurrentRow.DataBoundItem;
             
-            //ArticuloDB articuloDB = new ArticuloDB();
             frmDetalles detalle = new frmDetalles();
 
             try
@@ -132,6 +131,34 @@ namespace Catalogo_Principal
             frmAgregar modificar = new frmAgregar(seleccionado);
             modificar.ShowDialog();
             cargarListado();
+        }
+
+        private void txtFiltro_KeyUp(object sender, KeyEventArgs e)
+        {
+            buscar();
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            buscar();
+        }
+
+        private void buscar()
+        {
+            List<Articulo> filtro;
+            if (txtFiltro.Text != "")
+            {
+                filtro = listaArticulo.FindAll(Art => Art.Nombre.ToUpper().Contains(txtFiltro.Text.ToUpper()) || Art.Marca.Nombre.ToUpper().Contains(txtFiltro.Text.ToUpper()) || Art.Categoria.Nombre.ToUpper().Contains(txtFiltro.Text.ToUpper()));
+                dvgArticulos.DataSource = null;
+                dvgArticulos.DataSource = filtro;
+            }
+            else
+            {
+                dvgArticulos.DataSource = null;
+                dvgArticulos.DataSource = listaArticulo;
+            }
+
+            columnasOcultas();
         }
     }
 }
