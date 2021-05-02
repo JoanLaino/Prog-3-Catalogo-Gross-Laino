@@ -41,7 +41,6 @@ namespace Catalogo_Principal
             this.txtCodigoArticulo = new System.Windows.Forms.TextBox();
             this.txtNombreArticulo = new System.Windows.Forms.TextBox();
             this.txtDescripcionArticulo = new System.Windows.Forms.TextBox();
-            this.txtPrecioArticulo = new System.Windows.Forms.TextBox();
             this.txtImagenArticulo = new System.Windows.Forms.TextBox();
             this.cboMarcaArticulo = new System.Windows.Forms.ComboBox();
             this.cboCategoriaArticulo = new System.Windows.Forms.ComboBox();
@@ -49,6 +48,10 @@ namespace Catalogo_Principal
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.pbxAgregarArticulo = new System.Windows.Forms.PictureBox();
+            this.numPrecio = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxAgregarArticulo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numPrecio)).BeginInit();
             this.SuspendLayout();
             // 
             // btnAgregarSecundario
@@ -164,19 +167,13 @@ namespace Catalogo_Principal
             this.txtDescripcionArticulo.Size = new System.Drawing.Size(274, 20);
             this.txtDescripcionArticulo.TabIndex = 14;
             // 
-            // txtPrecioArticulo
-            // 
-            this.txtPrecioArticulo.Location = new System.Drawing.Point(259, 294);
-            this.txtPrecioArticulo.Name = "txtPrecioArticulo";
-            this.txtPrecioArticulo.Size = new System.Drawing.Size(274, 20);
-            this.txtPrecioArticulo.TabIndex = 15;
-            // 
             // txtImagenArticulo
             // 
             this.txtImagenArticulo.Location = new System.Drawing.Point(259, 253);
             this.txtImagenArticulo.Name = "txtImagenArticulo";
             this.txtImagenArticulo.Size = new System.Drawing.Size(274, 20);
             this.txtImagenArticulo.TabIndex = 16;
+            this.txtImagenArticulo.TextChanged += new System.EventHandler(this.txtImagenArticulo_TextChanged);
             // 
             // cboMarcaArticulo
             // 
@@ -235,12 +232,29 @@ namespace Catalogo_Principal
             this.label8.TabIndex = 22;
             this.label8.Text = "®";
             // 
+            // pbxAgregarArticulo
+            // 
+            this.pbxAgregarArticulo.Location = new System.Drawing.Point(594, 86);
+            this.pbxAgregarArticulo.Name = "pbxAgregarArticulo";
+            this.pbxAgregarArticulo.Size = new System.Drawing.Size(156, 187);
+            this.pbxAgregarArticulo.TabIndex = 23;
+            this.pbxAgregarArticulo.TabStop = false;
+            // 
+            // numPrecio
+            // 
+            this.numPrecio.Location = new System.Drawing.Point(260, 294);
+            this.numPrecio.Name = "numPrecio";
+            this.numPrecio.Size = new System.Drawing.Size(273, 20);
+            this.numPrecio.TabIndex = 24;
+            // 
             // frmAgregar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(235)))), ((int)(((byte)(229)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.numPrecio);
+            this.Controls.Add(this.pbxAgregarArticulo);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -248,7 +262,6 @@ namespace Catalogo_Principal
             this.Controls.Add(this.cboCategoriaArticulo);
             this.Controls.Add(this.cboMarcaArticulo);
             this.Controls.Add(this.txtImagenArticulo);
-            this.Controls.Add(this.txtPrecioArticulo);
             this.Controls.Add(this.txtDescripcionArticulo);
             this.Controls.Add(this.txtNombreArticulo);
             this.Controls.Add(this.txtCodigoArticulo);
@@ -263,6 +276,9 @@ namespace Catalogo_Principal
             this.Controls.Add(this.btnAgregarSecundario);
             this.Name = "frmAgregar";
             this.Text = "Agregar Artículo";
+            this.Load += new System.EventHandler(this.frmAgregar_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pbxAgregarArticulo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numPrecio)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -282,7 +298,6 @@ namespace Catalogo_Principal
         private System.Windows.Forms.TextBox txtCodigoArticulo;
         private System.Windows.Forms.TextBox txtNombreArticulo;
         private System.Windows.Forms.TextBox txtDescripcionArticulo;
-        private System.Windows.Forms.TextBox txtPrecioArticulo;
         private System.Windows.Forms.TextBox txtImagenArticulo;
         private System.Windows.Forms.ComboBox cboMarcaArticulo;
         private System.Windows.Forms.ComboBox cboCategoriaArticulo;
@@ -290,5 +305,7 @@ namespace Catalogo_Principal
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.PictureBox pbxAgregarArticulo;
+        private System.Windows.Forms.NumericUpDown numPrecio;
     }
 }

@@ -7,7 +7,7 @@ using Dominio;
 
 namespace Negocio
 {
-    class MarcaDB
+    public class MarcaDB
     {
 		public List<Marca> Listar()
 		{

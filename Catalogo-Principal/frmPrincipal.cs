@@ -42,11 +42,7 @@ namespace Catalogo_Principal
                 listaArticulo = articuloDB.Listar();
                 dvgArticulos.DataSource = listaArticulo;
 
-                //Ocultar
-                //dvgArticulos.Columns["Codigo"].Visible = false;
-                dvgArticulos.Columns["Descripcion"].Visible = false;
-                dvgArticulos.Columns["Categoria"].Visible = false;
-                dvgArticulos.Columns["Imagen"].Visible = false;
+                columnasOcultas();
 
 
                 RecargarImg(listaArticulo[0].Imagen);
@@ -56,6 +52,15 @@ namespace Catalogo_Principal
 
                 MessageBox.Show(es.ToString());
             }
+        }
+
+        private void columnasOcultas()
+        {
+            //Ocultar
+            //dvgArticulos.Columns["Codigo"].Visible = false;
+            dvgArticulos.Columns["Descripcion"].Visible = false;
+            dvgArticulos.Columns["Categoria"].Visible = false;
+            dvgArticulos.Columns["Imagen"].Visible = false;
         }
       
         private void RecargarImg(string img)
