@@ -57,6 +57,7 @@ namespace Catalogo_Principal
         private void columnasOcultas()
         {
             //Ocultar
+            dvgArticulos.Columns["Id"].Visible = false;
             dvgArticulos.Columns["Codigo"].Visible = false;
             dvgArticulos.Columns["Descripcion"].Visible = false;
             dvgArticulos.Columns["Categoria"].Visible = false;
@@ -81,7 +82,12 @@ namespace Catalogo_Principal
 
         private void btnDetalle_Click(object sender, EventArgs e)
         {
+            //if (dvgArticulos.CurrentRow.DataBoundItem == null)
+            //{
+            //    MessageBox.Show("No ha seleccionado ningun articulo.");
+            //} Probamos pero no solucionó el problema de no seleccionar nada.
             Articulo seleccionado = (Articulo)dvgArticulos.CurrentRow.DataBoundItem;
+            
             //ArticuloDB articuloDB = new ArticuloDB();
             frmDetalles detalle = new frmDetalles();
 
@@ -118,6 +124,14 @@ namespace Catalogo_Principal
 
                 throw ex;
             }
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            Articulo seleccionado = (Articulo)dvgArticulos.CurrentRow.DataBoundItem;
+            frmAgregar modificar = new frmAgregar(seleccionado);
+            modificar.ShowDialog();
+            cargarListado();
         }
     }
 }

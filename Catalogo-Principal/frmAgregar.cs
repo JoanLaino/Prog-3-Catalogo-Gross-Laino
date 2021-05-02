@@ -94,8 +94,16 @@ namespace Catalogo_Principal
                 articulo.Imagen = txtImagenArticulo.Text;
                 articulo.Precio = (decimal)numPrecio.Value;
 
-                articuloDB.agregarArticulo(articulo);
-                MessageBox.Show("agregado sin problema");
+                if (articulo.Id == 0)
+                {
+                    articuloDB.agregarArticulo(articulo);
+                    MessageBox.Show("Agregado sin problema.");
+                }
+                else
+                {
+                    articuloDB.modificarArticulo(articulo);
+                    MessageBox.Show("Modificado sin problema.");
+                }
                 Close();
             }
             catch (Exception ex)

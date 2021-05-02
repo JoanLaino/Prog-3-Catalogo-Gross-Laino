@@ -29,6 +29,8 @@ namespace Catalogo_Principal
                 listaArticulo = articuloDB.ListarDetalles(Codigo);
                 dvgDetalles.DataSource = listaArticulo;
 
+                dvgDetalles.Columns["Id"].Visible = false;
+
                 RecargarImg(listaArticulo[0].Imagen);
             }
             catch (Exception es)

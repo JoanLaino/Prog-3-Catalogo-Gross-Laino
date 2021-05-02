@@ -18,15 +18,16 @@ namespace Negocio
             
             try
             {
-                datos.SetearConsulta("select Codigo, Nombre, A.Descripcion, M.Id IdMarca, M.Descripcion Marca, C.Id IdCategoria, C.Descripcion Categoria, ImagenUrl, Precio from ARTICULOS A, MARCAS M, CATEGORIAS C WHERE A.IdMarca = M.Id AND C.Id = A.IdCategoria");
+                datos.SetearConsulta("select A.Id Id, Codigo, Nombre, A.Descripcion, M.Id IdMarca, M.Descripcion Marca, C.Id IdCategoria, C.Descripcion Categoria, ImagenUrl, Precio from ARTICULOS A, MARCAS M, CATEGORIAS C WHERE A.IdMarca = M.Id AND C.Id = A.IdCategoria");
                 datos.EjecutarLectura();
 
                 while(datos.Lector.Read())
                 {
                     Articulo aux = new Articulo();
+                    aux.Id = (int)datos.Lector["Id"];
                     aux.Codigo = (string)datos.Lector["Codigo"];
                     aux.Nombre = (string)datos.Lector["Nombre"];
-                    aux.Descripcion = datos.Lector.GetString(2);
+                    aux.Descripcion = datos.Lector.GetString(3);
                     aux.Marca = new Marca((string)datos.Lector["Marca"]);
                     aux.Marca.Id = (int)datos.Lector["IdMarca"];
                     aux.Categoria = new Categoria((string)datos.Lector["Categoria"]);
@@ -128,6 +129,34 @@ namespace Negocio
             {
                 datos.CerrarConexion();
                 datos = null;
+            }
+        }
+
+        public void modificarArticulo(Articulo articulo)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                datos.SetearConsulta("update ARTICULOS set Codigo = @Codigo, Nombre = @Nombre, Descripcion = @Descripcion, IdMarca = @IdMarca, IdCategoria = @IdCategoria, ImagenUrl = @Imagen, Precio = @Precio WHERE Id = @Id");
+                datos.setearParametro("@Codigo", articulo.Codigo);
+                datos.setearParametro("@Nombre", articulo.Nombre);
+                datos.setearParametro("@Descripcion", articulo.Descripcion);
+                datos.setearParametro("@IdMarca", articulo.Marca.Id);
+                datos.setearParametro("@IdCategoria", articulo.Categoria.Id);
+                datos.setearParametro("@Imagen", articulo.Imagen);
+                datos.setearParametro("@Precio", articulo.Precio);
+                datos.setearParametro("@Id", articulo.Id);
+
+                datos.EjectutarAccion();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                datos.CerrarConexion();
             }
         }
     }
