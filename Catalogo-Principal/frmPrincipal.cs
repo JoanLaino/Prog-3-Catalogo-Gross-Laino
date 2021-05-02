@@ -98,6 +98,26 @@ namespace Catalogo_Principal
             
             detalle.ShowDialog();
         }
-        
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            Articulo seleccionado = (Articulo)dvgArticulos.CurrentRow.DataBoundItem;
+            ArticuloDB articuloDB = new ArticuloDB();
+
+            try
+            {
+                if(MessageBox.Show("Para confirmar la eliminación del artículo, presione Sí", "Eliminando...", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    articuloDB.EliminarArticulo(seleccionado.Codigo);
+                    MessageBox.Show("El artículo " + seleccionado.Nombre + " se ha eliminado correctamente");
+                    cargarListado();
+                }
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
     }
 }

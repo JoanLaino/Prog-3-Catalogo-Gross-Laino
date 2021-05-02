@@ -9,7 +9,8 @@ using System.Data.SqlClient;
 namespace Negocio
 {
     public class ArticuloDB
-    {      
+    {
+        private AccesoDatos datos;
         public List<Articulo> Listar()
         {
             List<Articulo> lista = new List<Articulo>();
@@ -105,6 +106,26 @@ namespace Negocio
             finally
             {
                 datos.CerrarConexion();
+            }
+        }
+
+        public void EliminarArticulo(string codigo)
+        {
+            datos = new AccesoDatos();
+
+            try
+            {
+                datos.SetearConsulta("delete from ARTICULOS WHERE Codigo = '" + codigo + "'");
+                datos.EjectutarAccion();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.CerrarConexion();
+                datos = null;
             }
         }
     }
