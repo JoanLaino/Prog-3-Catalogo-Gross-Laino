@@ -21,7 +21,7 @@ namespace Catalogo_Principal
         }
         private void frmDetalles_Load(object sender, EventArgs e)
         {
-            cargarDetalle(); //Ver como pasar cargar detalle
+            //cargarDetalle(); //Ver como pasar cargar detalle
         }
 
         public void cargarDetalle(string Codigo)

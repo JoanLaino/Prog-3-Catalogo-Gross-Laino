@@ -33,3 +33,9 @@ C:\Users\joanl\OneDrive\Desktop\Catalogo\Dominio\obj\Debug\Dominio.csprojAssembl
 C:\Users\joanl\OneDrive\Desktop\Catalogo\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
 C:\Users\joanl\OneDrive\Desktop\Catalogo\Dominio\obj\Debug\Dominio.dll
 C:\Users\joanl\OneDrive\Desktop\Catalogo\Dominio\obj\Debug\Dominio.pdb
+C:\Users\Juan Manuel Gross\Documents\GitHub\TP-WinForm-Gross-Laino\Dominio\bin\Debug\Dominio.dll
+C:\Users\Juan Manuel Gross\Documents\GitHub\TP-WinForm-Gross-Laino\Dominio\bin\Debug\Dominio.pdb
+C:\Users\Juan Manuel Gross\Documents\GitHub\TP-WinForm-Gross-Laino\Dominio\obj\Debug\Dominio.csprojAssemblyReference.cache
+C:\Users\Juan Manuel Gross\Documents\GitHub\TP-WinForm-Gross-Laino\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Juan Manuel Gross\Documents\GitHub\TP-WinForm-Gross-Laino\Dominio\obj\Debug\Dominio.dll
+C:\Users\Juan Manuel Gross\Documents\GitHub\TP-WinForm-Gross-Laino\Dominio\obj\Debug\Dominio.pdb
