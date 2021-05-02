@@ -67,6 +67,7 @@ namespace Catalogo_Principal
             this.btnAgregarSecundario.TabIndex = 1;
             this.btnAgregarSecundario.Text = "Agregar";
             this.btnAgregarSecundario.UseVisualStyleBackColor = false;
+            this.btnAgregarSecundario.Click += new System.EventHandler(this.btnAgregarSecundario_Click);
             // 
             // btnCancelarAgregado
             // 
@@ -86,7 +87,7 @@ namespace Catalogo_Principal
             // lblCodArticulo
             // 
             this.lblCodArticulo.AutoSize = true;
-            this.lblCodArticulo.Location = new System.Drawing.Point(206, 45);
+            this.lblCodArticulo.Location = new System.Drawing.Point(108, 48);
             this.lblCodArticulo.Name = "lblCodArticulo";
             this.lblCodArticulo.Size = new System.Drawing.Size(43, 13);
             this.lblCodArticulo.TabIndex = 5;
@@ -95,7 +96,7 @@ namespace Catalogo_Principal
             // lblNombreArticulo
             // 
             this.lblNombreArticulo.AutoSize = true;
-            this.lblNombreArticulo.Location = new System.Drawing.Point(202, 86);
+            this.lblNombreArticulo.Location = new System.Drawing.Point(104, 89);
             this.lblNombreArticulo.Name = "lblNombreArticulo";
             this.lblNombreArticulo.Size = new System.Drawing.Size(47, 13);
             this.lblNombreArticulo.TabIndex = 6;
@@ -104,7 +105,7 @@ namespace Catalogo_Principal
             // lblDescripcionArticulo
             // 
             this.lblDescripcionArticulo.AutoSize = true;
-            this.lblDescripcionArticulo.Location = new System.Drawing.Point(183, 129);
+            this.lblDescripcionArticulo.Location = new System.Drawing.Point(85, 132);
             this.lblDescripcionArticulo.Name = "lblDescripcionArticulo";
             this.lblDescripcionArticulo.Size = new System.Drawing.Size(66, 13);
             this.lblDescripcionArticulo.TabIndex = 7;
@@ -113,7 +114,7 @@ namespace Catalogo_Principal
             // lblCategoriaArticulo
             // 
             this.lblCategoriaArticulo.AutoSize = true;
-            this.lblCategoriaArticulo.Location = new System.Drawing.Point(192, 214);
+            this.lblCategoriaArticulo.Location = new System.Drawing.Point(94, 217);
             this.lblCategoriaArticulo.Name = "lblCategoriaArticulo";
             this.lblCategoriaArticulo.Size = new System.Drawing.Size(57, 13);
             this.lblCategoriaArticulo.TabIndex = 8;
@@ -122,7 +123,7 @@ namespace Catalogo_Principal
             // lblImgArticulo
             // 
             this.lblImgArticulo.AutoSize = true;
-            this.lblImgArticulo.Location = new System.Drawing.Point(179, 253);
+            this.lblImgArticulo.Location = new System.Drawing.Point(81, 256);
             this.lblImgArticulo.Name = "lblImgArticulo";
             this.lblImgArticulo.Size = new System.Drawing.Size(70, 13);
             this.lblImgArticulo.TabIndex = 9;
@@ -131,7 +132,7 @@ namespace Catalogo_Principal
             // lblMarcaArticulo
             // 
             this.lblMarcaArticulo.AutoSize = true;
-            this.lblMarcaArticulo.Location = new System.Drawing.Point(209, 173);
+            this.lblMarcaArticulo.Location = new System.Drawing.Point(111, 176);
             this.lblMarcaArticulo.Name = "lblMarcaArticulo";
             this.lblMarcaArticulo.Size = new System.Drawing.Size(40, 13);
             this.lblMarcaArticulo.TabIndex = 10;
@@ -140,7 +141,7 @@ namespace Catalogo_Principal
             // lblPrecioArticulo
             // 
             this.lblPrecioArticulo.AutoSize = true;
-            this.lblPrecioArticulo.Location = new System.Drawing.Point(209, 294);
+            this.lblPrecioArticulo.Location = new System.Drawing.Point(111, 297);
             this.lblPrecioArticulo.Name = "lblPrecioArticulo";
             this.lblPrecioArticulo.Size = new System.Drawing.Size(40, 13);
             this.lblPrecioArticulo.TabIndex = 11;
@@ -148,28 +149,28 @@ namespace Catalogo_Principal
             // 
             // txtCodigoArticulo
             // 
-            this.txtCodigoArticulo.Location = new System.Drawing.Point(259, 42);
+            this.txtCodigoArticulo.Location = new System.Drawing.Point(161, 45);
             this.txtCodigoArticulo.Name = "txtCodigoArticulo";
             this.txtCodigoArticulo.Size = new System.Drawing.Size(274, 20);
             this.txtCodigoArticulo.TabIndex = 12;
             // 
             // txtNombreArticulo
             // 
-            this.txtNombreArticulo.Location = new System.Drawing.Point(260, 83);
+            this.txtNombreArticulo.Location = new System.Drawing.Point(162, 86);
             this.txtNombreArticulo.Name = "txtNombreArticulo";
             this.txtNombreArticulo.Size = new System.Drawing.Size(274, 20);
             this.txtNombreArticulo.TabIndex = 13;
             // 
             // txtDescripcionArticulo
             // 
-            this.txtDescripcionArticulo.Location = new System.Drawing.Point(259, 126);
+            this.txtDescripcionArticulo.Location = new System.Drawing.Point(161, 129);
             this.txtDescripcionArticulo.Name = "txtDescripcionArticulo";
             this.txtDescripcionArticulo.Size = new System.Drawing.Size(274, 20);
             this.txtDescripcionArticulo.TabIndex = 14;
             // 
             // txtImagenArticulo
             // 
-            this.txtImagenArticulo.Location = new System.Drawing.Point(259, 253);
+            this.txtImagenArticulo.Location = new System.Drawing.Point(161, 256);
             this.txtImagenArticulo.Name = "txtImagenArticulo";
             this.txtImagenArticulo.Size = new System.Drawing.Size(274, 20);
             this.txtImagenArticulo.TabIndex = 16;
@@ -178,7 +179,7 @@ namespace Catalogo_Principal
             // cboMarcaArticulo
             // 
             this.cboMarcaArticulo.FormattingEnabled = true;
-            this.cboMarcaArticulo.Location = new System.Drawing.Point(260, 170);
+            this.cboMarcaArticulo.Location = new System.Drawing.Point(162, 173);
             this.cboMarcaArticulo.Name = "cboMarcaArticulo";
             this.cboMarcaArticulo.Size = new System.Drawing.Size(273, 21);
             this.cboMarcaArticulo.TabIndex = 17;
@@ -186,7 +187,7 @@ namespace Catalogo_Principal
             // cboCategoriaArticulo
             // 
             this.cboCategoriaArticulo.FormattingEnabled = true;
-            this.cboCategoriaArticulo.Location = new System.Drawing.Point(260, 214);
+            this.cboCategoriaArticulo.Location = new System.Drawing.Point(162, 217);
             this.cboCategoriaArticulo.Name = "cboCategoriaArticulo";
             this.cboCategoriaArticulo.Size = new System.Drawing.Size(273, 21);
             this.cboCategoriaArticulo.TabIndex = 18;
@@ -234,15 +235,22 @@ namespace Catalogo_Principal
             // 
             // pbxAgregarArticulo
             // 
-            this.pbxAgregarArticulo.Location = new System.Drawing.Point(594, 86);
+            this.pbxAgregarArticulo.Location = new System.Drawing.Point(520, 45);
             this.pbxAgregarArticulo.Name = "pbxAgregarArticulo";
-            this.pbxAgregarArticulo.Size = new System.Drawing.Size(156, 187);
+            this.pbxAgregarArticulo.Size = new System.Drawing.Size(218, 272);
+            this.pbxAgregarArticulo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxAgregarArticulo.TabIndex = 23;
             this.pbxAgregarArticulo.TabStop = false;
             // 
             // numPrecio
             // 
-            this.numPrecio.Location = new System.Drawing.Point(260, 294);
+            this.numPrecio.DecimalPlaces = 2;
+            this.numPrecio.Location = new System.Drawing.Point(162, 297);
+            this.numPrecio.Maximum = new decimal(new int[] {
+            10000000,
+            0,
+            0,
+            0});
             this.numPrecio.Name = "numPrecio";
             this.numPrecio.Size = new System.Drawing.Size(273, 20);
             this.numPrecio.TabIndex = 24;

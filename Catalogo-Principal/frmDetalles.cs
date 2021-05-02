@@ -19,15 +19,11 @@ namespace Catalogo_Principal
         {
             InitializeComponent();
         }
-        private void frmDetalles_Load(object sender, EventArgs e)
-        {
-            //cargarDetalle(); //Ver como pasar cargar detalle
-        }
 
         public void cargarDetalle(string Codigo)
         {
             ArticuloDB articuloDB = new ArticuloDB();
-
+            
             try
             {
                 listaArticulo = articuloDB.ListarDetalles(Codigo);

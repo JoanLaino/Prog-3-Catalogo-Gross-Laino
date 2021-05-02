@@ -41,14 +41,15 @@ namespace Catalogo_Principal
             this.dvgDetalles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dvgDetalles.Location = new System.Drawing.Point(12, 48);
             this.dvgDetalles.Name = "dvgDetalles";
-            this.dvgDetalles.Size = new System.Drawing.Size(663, 40);
+            this.dvgDetalles.Size = new System.Drawing.Size(663, 62);
             this.dvgDetalles.TabIndex = 0;
             // 
             // pbxDetalles
             // 
-            this.pbxDetalles.Location = new System.Drawing.Point(215, 111);
+            this.pbxDetalles.Location = new System.Drawing.Point(212, 129);
             this.pbxDetalles.Name = "pbxDetalles";
-            this.pbxDetalles.Size = new System.Drawing.Size(230, 238);
+            this.pbxDetalles.Size = new System.Drawing.Size(244, 235);
+            this.pbxDetalles.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxDetalles.TabIndex = 1;
             this.pbxDetalles.TabStop = false;
             // 
@@ -73,7 +74,6 @@ namespace Catalogo_Principal
             this.Controls.Add(this.dvgDetalles);
             this.Name = "frmDetalles";
             this.Text = "Detalles";
-            this.Load += new System.EventHandler(this.frmDetalles_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dvgDetalles)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxDetalles)).EndInit();
             this.ResumeLayout(false);
