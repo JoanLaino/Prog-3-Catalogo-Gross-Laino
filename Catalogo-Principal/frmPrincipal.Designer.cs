@@ -41,6 +41,8 @@ namespace Catalogo_Principal
             this.label4 = new System.Windows.Forms.Label();
             this.pbxArticulo = new System.Windows.Forms.PictureBox();
             this.dvgArticulos = new System.Windows.Forms.DataGridView();
+            this.btnAgregarMarca = new System.Windows.Forms.Button();
+            this.btnAgregarCategoria = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbxArticulo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dvgArticulos)).BeginInit();
             this.SuspendLayout();
@@ -127,7 +129,7 @@ namespace Catalogo_Principal
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Lucida Handwriting", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(32, 359);
+            this.label1.Location = new System.Drawing.Point(574, 33);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(68, 24);
             this.label1.TabIndex = 9;
@@ -137,7 +139,7 @@ namespace Catalogo_Principal
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Lucida Handwriting", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(48, 384);
+            this.label2.Location = new System.Drawing.Point(590, 58);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(37, 15);
             this.label2.TabIndex = 10;
@@ -148,7 +150,7 @@ namespace Catalogo_Principal
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Lucida Handwriting", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(25, 398);
+            this.label3.Location = new System.Drawing.Point(567, 72);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(78, 24);
             this.label3.TabIndex = 11;
@@ -159,7 +161,7 @@ namespace Catalogo_Principal
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Lucida Handwriting", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(96, 412);
+            this.label4.Location = new System.Drawing.Point(638, 86);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(26, 27);
             this.label4.TabIndex = 12;
@@ -185,12 +187,46 @@ namespace Catalogo_Principal
             this.dvgArticulos.TabIndex = 14;
             this.dvgArticulos.Click += new System.EventHandler(this.dvgArticulos_Click);
             // 
+            // btnAgregarMarca
+            // 
+            this.btnAgregarMarca.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(247)))), ((int)(((byte)(107)))));
+            this.btnAgregarMarca.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAgregarMarca.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAgregarMarca.Font = new System.Drawing.Font("Cambria", 11.75F);
+            this.btnAgregarMarca.ForeColor = System.Drawing.Color.Black;
+            this.btnAgregarMarca.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgregarMarca.Location = new System.Drawing.Point(28, 298);
+            this.btnAgregarMarca.Name = "btnAgregarMarca";
+            this.btnAgregarMarca.Size = new System.Drawing.Size(94, 49);
+            this.btnAgregarMarca.TabIndex = 15;
+            this.btnAgregarMarca.Text = "Nueva Marca";
+            this.btnAgregarMarca.UseVisualStyleBackColor = false;
+            this.btnAgregarMarca.Click += new System.EventHandler(this.btnAgregarMarca_Click);
+            // 
+            // btnAgregarCategoria
+            // 
+            this.btnAgregarCategoria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(155)))), ((int)(((byte)(243)))));
+            this.btnAgregarCategoria.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAgregarCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAgregarCategoria.Font = new System.Drawing.Font("Cambria", 11.75F);
+            this.btnAgregarCategoria.ForeColor = System.Drawing.Color.Black;
+            this.btnAgregarCategoria.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgregarCategoria.Location = new System.Drawing.Point(28, 373);
+            this.btnAgregarCategoria.Name = "btnAgregarCategoria";
+            this.btnAgregarCategoria.Size = new System.Drawing.Size(94, 49);
+            this.btnAgregarCategoria.TabIndex = 16;
+            this.btnAgregarCategoria.Text = "Nueva Categoría";
+            this.btnAgregarCategoria.UseVisualStyleBackColor = false;
+            this.btnAgregarCategoria.Click += new System.EventHandler(this.btnAgregarCategoria_Click);
+            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(235)))), ((int)(((byte)(229)))));
-            this.ClientSize = new System.Drawing.Size(745, 493);
+            this.ClientSize = new System.Drawing.Size(745, 431);
+            this.Controls.Add(this.btnAgregarCategoria);
+            this.Controls.Add(this.btnAgregarMarca);
             this.Controls.Add(this.dvgArticulos);
             this.Controls.Add(this.pbxArticulo);
             this.Controls.Add(this.label4);
@@ -227,6 +263,8 @@ namespace Catalogo_Principal
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pbxArticulo;
         private System.Windows.Forms.DataGridView dvgArticulos;
+        private System.Windows.Forms.Button btnAgregarMarca;
+        private System.Windows.Forms.Button btnAgregarCategoria;
     }
 }
 

@@ -82,10 +82,6 @@ namespace Catalogo_Principal
 
         private void btnDetalle_Click(object sender, EventArgs e)
         {
-            //if (dvgArticulos.CurrentRow.DataBoundItem == null)
-            //{
-            //    MessageBox.Show("No ha seleccionado ningun articulo.");
-            //} Probamos pero no solucionó el problema de no seleccionar nada.
             Articulo seleccionado = (Articulo)dvgArticulos.CurrentRow.DataBoundItem;
             
             frmDetalles detalle = new frmDetalles();
@@ -159,6 +155,18 @@ namespace Catalogo_Principal
             }
 
             columnasOcultas();
+        }
+
+        private void btnAgregarMarca_Click(object sender, EventArgs e)
+        {
+            frmNuevaMarca agregar = new frmNuevaMarca();
+            agregar.ShowDialog();
+        }
+
+        private void btnAgregarCategoria_Click(object sender, EventArgs e)
+        {
+            frmNuevaCategoria agregar = new frmNuevaCategoria();
+            agregar.ShowDialog();
         }
     }
 }

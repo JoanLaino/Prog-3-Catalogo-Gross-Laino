@@ -159,5 +159,47 @@ namespace Negocio
                 datos.CerrarConexion();
             }
         }
+
+        public void agregarMarca(Marca marca)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                string valores = "values('" + marca.Nombre + "')";
+                datos.SetearConsulta("insert into MARCAS (Descripcion)" + valores);
+
+                datos.EjectutarAccion();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                datos.CerrarConexion();
+            }
+        }
+
+        public void agregarCategoria(Categoria categoria)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                string valores = "values('" + categoria.Nombre + "')";
+                datos.SetearConsulta("insert into CATEGORIAS (Descripcion)" + valores);
+
+                datos.EjectutarAccion();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                datos.CerrarConexion();
+            }
+        }
     }
 }
