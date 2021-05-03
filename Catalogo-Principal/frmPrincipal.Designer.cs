@@ -186,10 +186,16 @@ namespace Catalogo_Principal
             // 
             // dvgArticulos
             // 
+            this.dvgArticulos.AllowUserToResizeColumns = false;
+            this.dvgArticulos.AllowUserToResizeRows = false;
+            this.dvgArticulos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dvgArticulos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dvgArticulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dvgArticulos.Location = new System.Drawing.Point(150, 87);
             this.dvgArticulos.Name = "dvgArticulos";
-            this.dvgArticulos.RowHeadersWidth = 62;
+            this.dvgArticulos.ReadOnly = true;
+            this.dvgArticulos.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders;
+            this.dvgArticulos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dvgArticulos.Size = new System.Drawing.Size(340, 335);
             this.dvgArticulos.TabIndex = 14;
             this.dvgArticulos.Click += new System.EventHandler(this.dvgArticulos_Click);

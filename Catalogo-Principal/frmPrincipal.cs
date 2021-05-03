@@ -44,7 +44,6 @@ namespace Catalogo_Principal
 
                 columnasOcultas();
 
-
                 RecargarImg(listaArticulo[0].Imagen);
             }
             catch (Exception es)
@@ -183,6 +182,5 @@ namespace Catalogo_Principal
         {
             System.Diagnostics.Process.Start("https://github.com/JoanLaino/TP-WinForm-Gross-Laino");
         }
-
     }
 }

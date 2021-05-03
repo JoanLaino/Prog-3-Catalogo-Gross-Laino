@@ -38,15 +38,17 @@ namespace Catalogo_Principal
             // 
             // dvgDetalles
             // 
+            this.dvgDetalles.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dvgDetalles.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
             this.dvgDetalles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dvgDetalles.Location = new System.Drawing.Point(12, 48);
             this.dvgDetalles.Name = "dvgDetalles";
-            this.dvgDetalles.Size = new System.Drawing.Size(663, 62);
+            this.dvgDetalles.Size = new System.Drawing.Size(663, 87);
             this.dvgDetalles.TabIndex = 0;
             // 
             // pbxDetalles
             // 
-            this.pbxDetalles.Location = new System.Drawing.Point(212, 129);
+            this.pbxDetalles.Location = new System.Drawing.Point(212, 151);
             this.pbxDetalles.Name = "pbxDetalles";
             this.pbxDetalles.Size = new System.Drawing.Size(244, 235);
             this.pbxDetalles.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -57,18 +59,18 @@ namespace Catalogo_Principal
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cambria", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(281, 26);
+            this.label1.Location = new System.Drawing.Point(12, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 19);
+            this.label1.Size = new System.Drawing.Size(154, 19);
             this.label1.TabIndex = 2;
-            this.label1.Text = "DETALLES";
+            this.label1.Text = "Detalles de artículo:";
             // 
             // frmDetalles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(235)))), ((int)(((byte)(229)))));
-            this.ClientSize = new System.Drawing.Size(687, 376);
+            this.ClientSize = new System.Drawing.Size(687, 400);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pbxDetalles);
             this.Controls.Add(this.dvgDetalles);
