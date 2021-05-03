@@ -132,3 +132,5 @@ C:\Users\joanl\OneDrive\Documentos\GitHub\TP-WinForm-Gross-Laino\Catalogo-Princi
 C:\Users\joanl\OneDrive\Documentos\GitHub\TP-WinForm-Gross-Laino\Catalogo-Principal\obj\Debug\Catalogo-Principal.pdb
 C:\Users\Juan Manuel Gross\Documents\GitHub\TP-WinForm-Gross-Laino\Catalogo-Principal\obj\Debug\Catalogo_Principal.frmNuevaCategoria.resources
 C:\Users\Juan Manuel Gross\Documents\GitHub\TP-WinForm-Gross-Laino\Catalogo-Principal\obj\Debug\Catalogo_Principal.frmNuevaMarca.resources
+C:\Users\joanl\OneDrive\Documentos\GitHub\TP-WinForm-Gross-Laino\Catalogo-Principal\obj\Debug\Catalogo_Principal.frmNuevaCategoria.resources
+C:\Users\joanl\OneDrive\Documentos\GitHub\TP-WinForm-Gross-Laino\Catalogo-Principal\obj\Debug\Catalogo_Principal.frmNuevaMarca.resources

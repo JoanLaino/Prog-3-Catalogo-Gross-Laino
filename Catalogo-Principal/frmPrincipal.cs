@@ -69,11 +69,6 @@ namespace Catalogo_Principal
             pbxArticulo.Load(img);
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("https://github.com/JoanLaino/Prog-TP2-Gross-Laino.git");
-        }
-
         private void dvgArticulos_Click(object sender, EventArgs e)
         {
             Articulo seleccionado = (Articulo)dvgArticulos.CurrentRow.DataBoundItem;
@@ -168,5 +163,26 @@ namespace Catalogo_Principal
             frmNuevaCategoria agregar = new frmNuevaCategoria();
             agregar.ShowDialog();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/JoanLaino/TP-WinForm-Gross-Laino");
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/JoanLaino/TP-WinForm-Gross-Laino");
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/JoanLaino/TP-WinForm-Gross-Laino");
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/JoanLaino/TP-WinForm-Gross-Laino");
+        }
+
     }
 }
