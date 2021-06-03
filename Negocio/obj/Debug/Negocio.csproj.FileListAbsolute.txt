@@ -79,3 +79,12 @@ C:\Users\Juan Manuel\Documents\GitHub\TP-WinForm-Gross-Laino\Negocio\obj\Debug\N
 C:\Users\Juan Manuel\Documents\GitHub\TP-WinForm-Gross-Laino\Negocio\obj\Debug\Negocio.csproj.CopyComplete
 C:\Users\Juan Manuel\Documents\GitHub\TP-WinForm-Gross-Laino\Negocio\obj\Debug\Negocio.dll
 C:\Users\Juan Manuel\Documents\GitHub\TP-WinForm-Gross-Laino\Negocio\obj\Debug\Negocio.pdb
+C:\Users\joanl\OneDrive\Documentos\Materias New\Programacion III\Catalogo\Negocio\bin\Debug\Negocio.dll
+C:\Users\joanl\OneDrive\Documentos\Materias New\Programacion III\Catalogo\Negocio\bin\Debug\Negocio.pdb
+C:\Users\joanl\OneDrive\Documentos\Materias New\Programacion III\Catalogo\Negocio\bin\Debug\Dominio.dll
+C:\Users\joanl\OneDrive\Documentos\Materias New\Programacion III\Catalogo\Negocio\bin\Debug\Dominio.pdb
+C:\Users\joanl\OneDrive\Documentos\Materias New\Programacion III\Catalogo\Negocio\obj\Debug\Negocio.csprojAssemblyReference.cache
+C:\Users\joanl\OneDrive\Documentos\Materias New\Programacion III\Catalogo\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\joanl\OneDrive\Documentos\Materias New\Programacion III\Catalogo\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+C:\Users\joanl\OneDrive\Documentos\Materias New\Programacion III\Catalogo\Negocio\obj\Debug\Negocio.dll
+C:\Users\joanl\OneDrive\Documentos\Materias New\Programacion III\Catalogo\Negocio\obj\Debug\Negocio.pdb
