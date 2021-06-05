@@ -91,3 +91,16 @@
 .img-cards{
     width: 150px !important;
 }
+
+.stl-card {
+    box-shadow: 0px 0px 10px 0px grey;
+    padding-top: 15px;
+}
+
+.bg-dark {
+    box-shadow: 0px 0px 10px 0px #000000 !important;
+}
+
+.btn-detalle-general {
+
+}
