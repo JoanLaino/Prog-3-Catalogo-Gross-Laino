@@ -11,6 +11,8 @@ namespace WebApp
 {
     public partial class DetalleArticulo : System.Web.UI.Page
     {
+        Articulo item;
+        public static List<Articulo> listadoCarrito = new List<Articulo>();
         protected void Page_Load(object sender, EventArgs e)
         {
             int id = int.Parse(Request.QueryString["id"]);
@@ -24,6 +26,22 @@ namespace WebApp
             lblMarca.Text = seleccionado.Marca.Nombre;
             lblCategoria.Text = seleccionado.Categoria.Nombre;
             lblPrecio.Text = Convert.ToString(seleccionado.Precio);
+
+            item = seleccionado;
+        }
+
+        protected void btnAgregar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                listadoCarrito.Add(item);
+                Session.Add("listadoCarrito", listadoCarrito);
+                Response.Redirect("Carrito.aspx");
+            }
+            catch (Exception ex)
+            {
+                Response.Redirect("CardsArticulos.aspx");
+            }
         }
     }
 }

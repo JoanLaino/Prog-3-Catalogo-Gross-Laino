@@ -6,9 +6,7 @@
     <div class="principal-detalle">
     
         <div class="img-detalle">
-           <%-- <center>--%>
                 <asp:Image ID="imgSeleccionado" runat="server" class="img-detalle"/>
-            <%--</center>--%>
         </div>
     
        
@@ -31,6 +29,9 @@
             <span class="txt-detalle">$</span>
             <asp:Label Text="text" ID="lblPrecio" runat="server" CssClass="lbl-detalle" />
         </div>
+
+        <asp:Button ID="btnAgregar" runat="server" Text="+ Carrito" OnClick="btnAgregar_Click" />
+
     </div>
    </center>
 </asp:Content>
