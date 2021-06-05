@@ -17,7 +17,7 @@
 
          <%   } %>
     </table>--%>
-
+    <center>
     <div class="container">
         <div class="row">
 
@@ -25,17 +25,23 @@
                 {%>
             <div class="col">
                 <div class="card" style="width: 18rem;">
-                    <img src="<% = item.Imagen %>" class="card-img-top" alt="...">
+                    <center>
+                        <img src="<% = item.Imagen %>" class="card-img-top img-cards" alt="...">
+                    </center>
                     <div class="card-body">
                         <h5 class="card-title"><% = item.Nombre %></h5>
-                        <p class="card-text"><% = item.Descripcion %></p>
-                        <a href="DetalleArticulo.aspx?id=<% = item.Id %>" class="btn btn-primary">Detalles</a>
+                        <%--<p class="card-text"><% = item.Descripcion %></p>--%>
+                        <h6>$ <% = item.Precio %></h6>
+                        <br />
+                        <a href="DetalleArticulo.aspx?id=<% = item.Id %>" class="btn btn-primary btn-cards-carrito-2">Detalles</a>
+                        <a href="#" class="btn btn-primary btn-cards-carrito">+ Carrito</a>
+
                     </div>
                 </div>
             </div>
             <%   } %>
         </div>
     </div>
-
+        </center>
 
 </asp:Content>

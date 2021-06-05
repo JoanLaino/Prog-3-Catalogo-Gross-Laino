@@ -17,8 +17,13 @@ namespace WebApp
             List<Articulo> listado = (List<Articulo>)Session["listadoArticulos"];
             Articulo seleccionado = listado.Find(x => x.Id == id);
 
-            lblSeleccionado.Text = seleccionado.Nombre;
-            lblUrlImagen.Text = seleccionado.Imagen;
+            imgSeleccionado.ImageUrl = seleccionado.Imagen;
+            lblCodigo.Text = seleccionado.Codigo;
+            lblNombre.Text = seleccionado.Nombre;
+            lblDescripcion.Text = seleccionado.Descripcion;
+            lblMarca.Text = seleccionado.Marca.Nombre;
+            lblCategoria.Text = seleccionado.Categoria.Nombre;
+            lblPrecio.Text = Convert.ToString(seleccionado.Precio);
         }
     }
 }
