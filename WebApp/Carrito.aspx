@@ -4,25 +4,32 @@
     <table>
         <tr>
             <td>
-                 Nombre
+                <span class="txt-carrito"></span>
             </td>
             <td>
-                Precio
+                <span class="txt-carrito">Nombre</span>
             </td>
-            
+            <td>
+                <span class="txt-carrito">Precio</span>
+            </td>
+            <hr />
         </tr>
+        
         <asp:Repeater runat="server" ID="repetidor">
             <ItemTemplate>
-
+                
                 <tr>
-                    <td>
+                    <td class="img-carrito">
+                        <img src="<%#Eval("Imagen")%>" width="40px"/>
+                    </td>
+                    <td class="nom-carrito">
                         <%#Eval("Nombre")%>
                     </td>
-                    <td>
+                    <td class="imp-carrito">
                         $ <%#Eval("Precio")%>
                     </td>
                     <td>
-                        <asp:Button ID="btnEliminar" CssClass="btn btn-primary" Text="Eliminar" CommandArgument='<%#Eval("Id")%>' runat="server" OnClick="quitarArticulo" />
+                        <asp:Button ID="btnEliminar" CssClass="btn btn-primary btn-carrito-eliminar" Text="Eliminar" CommandArgument='<%#Eval("Id")%>' runat="server" OnClick="quitarArticulo" />
                     </td>
                 </tr>
 

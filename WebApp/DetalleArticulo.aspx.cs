@@ -40,7 +40,7 @@ namespace WebApp
             }
             catch (Exception ex)
             {
-                Response.Redirect("CardsArticulos.aspx");
+                Response.Redirect("AgregadoCorrectamente.aspx");
             }
         }
     }

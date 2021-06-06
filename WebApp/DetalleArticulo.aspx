@@ -29,8 +29,9 @@
             <span class="txt-detalle">$</span>
             <asp:Label Text="text" ID="lblPrecio" runat="server" CssClass="lbl-detalle" />
         </div>
-
-        <asp:Button ID="btnAgregar" runat="server" Text="+ Carrito" OnClick="btnAgregar_Click" />
+        <center>
+            <asp:Button ID="btnAgregar" runat="server" Text="Agregar al Carrito" OnClick="btnAgregar_Click" CssClass="btn-carrito" />
+        </center>
 
     </div>
    </center>

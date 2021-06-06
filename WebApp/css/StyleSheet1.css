@@ -101,6 +101,140 @@
     box-shadow: 0px 0px 10px 0px #000000 !important;
 }
 
-.btn-detalle-general {
+.btn-buscador {
+    background-color: #007bff;
+    color: #FFFFFF;
+    border: 2px solid darkgrey;
+    box-shadow: 2px 2px 6px 0px #000000;
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-bottom: 30px;
+}
 
+.btn-buscador:hover {
+    background-color: #FFFFFF;
+    color: #007bff;
+    font-weight: 400;
+}
+
+.txt-buscador {
+    width: 350px;
+}
+
+@media screen and (max-width: 480px) {
+    .txt-buscador {
+        width: 200px;
+    }
+}
+
+.btn-carrito {
+    background-color: #007bff;
+    color: #FFFFFF;
+    border: 2px solid darkgrey;
+    box-shadow: 2px 2px 6px 0px #000000;
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    width: 300px;
+}
+
+.btn-carrito:hover {
+    background-color: #FFFFFF;
+    color: #007bff;
+    font-weight: 500;
+}
+
+.txt-carrito {
+    font-size: 20px;
+    font-family: monospace;
+    font-weight: 600;
+}
+
+.img-carrito {
+    padding-right: 40px;
+    padding-bottom: 30px;
+}
+
+.nom-carrito {
+    width: 350px;
+}
+
+.imp-carrito {
+    width: 130px;
+}
+
+.btn-carrito-eliminar {
+    background-color: #007bff;
+    color: #FFFFFF;
+}
+
+.btn-carrito-eliminar:hover {
+    border: 2px solid #007bff !important;
+    background-color: #FFFFFF !important;
+    color: #007bff !important;
+}
+
+.cont-correcto {
+    width: 80%;
+    box-shadow: 0px 0px 10px 0px #000000;
+    border-radius: 30px;
+    padding: 30px;
+    background-color: #1BEE2F;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+.btn-cont-inicio {
+    background-color: #007bff;
+    color: #FFFFFF;
+    border: 2px solid darkgrey;
+    box-shadow: 2px 2px 6px 0px #000000;
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    width: 120px;
+    margin-right: 60px;
+}
+
+@media screen and (max-width: 480px) {
+    .btn-cont-inicio {
+        margin-right: 0px;
+    }
+}
+
+.btn-cont-inicio:hover {
+    background-color: #FFFFFF;
+    color: #007bff;
+    font-weight: 500;
+}
+
+
+.btn-cont-carrito {
+    background-color: #715A16;
+    color: #FFFFFF;
+    border: 2px solid darkgrey;
+    box-shadow: 2px 2px 6px 0px #000000;
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    width: 120px;
+}
+
+.btn-cont-carrito:hover {
+    background-color: #FFFFFF;
+    color: #715A16;
+    font-weight: 500;
+}
+
+.txt-correcto-1 {
+    font-family: serif;
+    font-weight: 600;
+}
+
+.txt-correcto-2 {
+    font-family: serif;
+    font-weight: 500;
 }

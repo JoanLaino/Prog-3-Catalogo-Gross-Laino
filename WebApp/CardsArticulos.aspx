@@ -2,8 +2,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
     <center>
-        <asp:Button OnClick="buscarArticulo" ID="btnBuscar" runat="server" Text="Buscar" />
-        <asp:TextBox ID="txtFiltro" runat="server"></asp:TextBox>
+        <asp:Button OnClick="buscarArticulo" ID="btnBuscar" runat="server" Text="Buscar" CssClass="btn-buscador" />
+        <asp:TextBox ID="txtFiltro" runat="server" CssClass="txt-buscador"></asp:TextBox>
     </center>
 
     <center>
