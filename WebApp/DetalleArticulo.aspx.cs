@@ -38,7 +38,7 @@ namespace WebApp
                 Session.Add("listadoCarrito", listadoCarrito);
                 Response.Redirect("Carrito.aspx");
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 Response.Redirect("AgregadoCorrectamente.aspx");
             }

@@ -12,9 +12,8 @@
             <td>
                 <span class="txt-carrito">Precio</span>
             </td>
-            <hr />
         </tr>
-        
+
         <asp:Repeater runat="server" ID="repetidor">
             <ItemTemplate>
                 
@@ -35,6 +34,17 @@
 
             </ItemTemplate>
         </asp:Repeater>
+        
     </table>
+
+        <%-- TOTALCARRITO = Precios 
+               
+            SUMACARRITO = Cantidad --%>
+
+        <span class="txt-carrito"><br><br> Precio total: $&nbsp</span>
+        <asp:Label class="txt-carrito" ID="lblTotalCarrito" runat="server" Text=""></asp:Label>
+        
+        <span class="txt-carrito"><br><br> Cantidad de productos: &nbsp</span>
+        <asp:Label class="txt-carrito" ID="lblSumaCarrito" runat="server" Text=""></asp:Label>
 
 </asp:Content>

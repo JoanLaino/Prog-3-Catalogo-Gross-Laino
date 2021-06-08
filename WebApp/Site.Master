@@ -37,6 +37,8 @@
                     </li>     
                     <li class="nav-item">
                         <a class="nav-link" href="Carrito.aspx">Carrito</a>
+
+                        <asp:Label ID="lblCantidadMaster" runat="server" Text="Label"></asp:Label>
                     </li> 
                 </ul>
             </div>

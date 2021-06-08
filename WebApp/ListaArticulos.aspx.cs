@@ -19,7 +19,7 @@ namespace WebApp
                 dgvArticulos.DataSource = articuloDB.Listar();
                 dgvArticulos.DataBind();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 Response.Redirect("Error.aspx");
             }
