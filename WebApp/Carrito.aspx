@@ -41,10 +41,10 @@
                
             SUMACARRITO = Cantidad --%>
 
-        <span class="txt-carrito"><br><br> Precio total: $&nbsp</span>
+        <span class="txt-carrito"><br><br> Precio total: $</span>
         <asp:Label class="txt-carrito" ID="lblTotalCarrito" runat="server" Text=""></asp:Label>
         
-        <span class="txt-carrito"><br><br> Cantidad de productos: &nbsp</span>
+        <span class="txt-carrito"><br><br> Cantidad de productos: </span>
         <asp:Label class="txt-carrito" ID="lblSumaCarrito" runat="server" Text=""></asp:Label>
 
 </asp:Content>

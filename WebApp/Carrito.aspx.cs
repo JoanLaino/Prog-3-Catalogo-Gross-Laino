@@ -18,6 +18,12 @@ namespace WebApp
             try
             {
                 carrito = (List<Articulo>)Session["listadoCarrito"];
+
+                if (carrito == null)
+                {
+                    lblTotalCarrito.Text = "0";
+                    lblSumaCarrito.Text = "0";
+                }
                 if (carrito != null)
                 {
                     if (!IsPostBack)
@@ -31,18 +37,18 @@ namespace WebApp
 
                         repetidor.DataSource = carrito;
                         repetidor.DataBind();
-
                     }
-
+                    
                     decimal totalCarrito = 0;
                     totalCarrito = carrito.Sum(x => x.Precio);
                     lblTotalCarrito.Text = Convert.ToString(totalCarrito);
-                    decimal sumaCarrito = 0;
+                    int sumaCarrito = 0;
                     sumaCarrito = carrito.Count();
                     lblSumaCarrito.Text = Convert.ToString(sumaCarrito);
 
                     Session.Add("listadoCarrito", carrito);
                 }
+                
             }
             catch (Exception ex)
             {
@@ -52,6 +58,10 @@ namespace WebApp
 
         protected void quitarArticulo(object sender, EventArgs e)
         {
+            int contador;
+            contador = Convert.ToInt32(Session["cantidadEnCarrito"])-1;
+            Session.Add("cantidadEnCarrito", contador);
+
             var argument = ((Button)sender).CommandArgument;
             List<Articulo> carrito = (List<Articulo>)Session["listadoCarrito"];
             Articulo elim = carrito.Find(x => x.Id.ToString() == argument);
@@ -59,13 +69,15 @@ namespace WebApp
 
             decimal totalCarrito = carrito.Sum(x => x.Precio);
             lblTotalCarrito.Text = Convert.ToString(totalCarrito);
-            decimal sumaCarrito = carrito.Count();
+            int sumaCarrito = carrito.Count();
             lblSumaCarrito.Text = Convert.ToString(sumaCarrito);
 
             Session.Add("listadoCarrito", carrito);
             repetidor.DataSource = null;
             repetidor.DataSource = carrito;
             repetidor.DataBind();
+
+            Response.Redirect("Carrito");
         }
     }
 }

@@ -9,9 +9,10 @@ namespace WebApp
 {
     public partial class SiteMaster : MasterPage
     {
+        public int sumaCarrito;
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            sumaCarrito = Convert.ToInt32(Session["cantidadEnCarrito"]);
         }
     }
 }
