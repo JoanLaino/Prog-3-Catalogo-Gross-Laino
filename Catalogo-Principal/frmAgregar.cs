@@ -26,6 +26,7 @@ namespace Catalogo_Principal
             this.articulo = articulo;
             Text = "Modificar Articulo";
         }
+
         private void btnCancelarAgregado_Click(object sender, EventArgs e)
         {
             Close();
@@ -57,12 +58,10 @@ namespace Catalogo_Principal
                     txtImagenArticulo.Text = articulo.Imagen;
                     RecargarImg(txtImagenArticulo.Text);
                     numPrecio.Value = articulo.Precio;
-
                 }
             }
             catch (Exception ex)
             {
-
                 MessageBox.Show(ex.ToString());
             }
         }
